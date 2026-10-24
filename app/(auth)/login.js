@@ -2,7 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { Link, Stack, useRouter } from 'expo-router'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { Text, View } from 'react-native'
+import { Linking, Pressable, Text, View } from 'react-native'
 
 import { Button, HandleResponse, Logo, TextField } from '@/components'
 import { useAppDispatch } from '@/hooks'
@@ -100,6 +100,12 @@ export default function LoginScreen() {
               Go to register
             </Link>
           </View>
+          <Pressable
+            onPress={() => Linking.openURL('https://webshop.seifeddineslimene.com/privacy')}
+            className="mt-4"
+          >
+            <Text className="text-gray-500 text-xs">Privacy policy</Text>
+          </Pressable>
         </View>
       </View>
     </>
