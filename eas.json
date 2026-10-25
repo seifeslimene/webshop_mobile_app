@@ -15,7 +15,8 @@
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "image": "latest"
       },
       "env": {
         "EXPO_PUBLIC_BASE_URL": "https://webshop.seifeddineslimene.com"
